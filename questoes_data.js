@@ -1,0 +1,952 @@
+window.BANCO_QUESTOES = [
+  {
+    "id": "ESP-0001",
+    "disciplina": "Português",
+    "assunto": "Interpretação de texto",
+    "subassunto": "Inferência",
+    "dificuldade": "Fácil",
+    "tipo": "Interpretação",
+    "fonte": "Conceito de inferência textual — Secretaria da Educação do Ceará",
+    "enunciado": "Leia o trecho: João saiu de casa levando um guarda-chuva. Ao chegar ao trabalho, deixou o objeto molhado próximo à porta. Com base no texto, é possível inferir que:",
+    "alternativas": {
+      "A": "João trabalha em casa.",
+      "B": "João comprou um guarda-chuva novo.",
+      "C": "Estava chovendo quando João chegou ao trabalho.",
+      "D": "João perdeu o guarda-chuva durante o caminho.",
+      "E": "João não gosta de dias chuvosos."
+    },
+    "gabarito": "C",
+    "comentario": "A alternativa C está correta. O guarda-chuva molhado permite inferir que João esteve exposto à chuva, embora o texto não diga diretamente que estava chovendo."
+  },
+  {
+    "id": "ESP-0002",
+    "disciplina": "Português",
+    "assunto": "Classes gramaticais",
+    "subassunto": "Conjunção",
+    "dificuldade": "Fácil",
+    "tipo": "Conceitual",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "A palavra destacada em \"Estudei bastante, mas não consegui terminar a prova\" estabelece uma relação de:",
+    "alternativas": {
+      "A": "Conclusão",
+      "B": "Oposição",
+      "C": "Explicação",
+      "D": "Adição",
+      "E": "Condição"
+    },
+    "gabarito": "B",
+    "comentario": "A palavra \"mas\" é uma conjunção coordenativa adversativa, pois estabelece uma relação de oposição entre as ideias."
+  },
+  {
+    "id": "ESP-0003",
+    "disciplina": "Português",
+    "assunto": "Concordância verbal",
+    "subassunto": "Sujeito composto posposto",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que a concordância verbal está de acordo com a norma-padrão.",
+    "alternativas": {
+      "A": "Restou dúvidas sobre o conteúdo da prova.",
+      "B": "Chegaram ontem os documentos solicitados.",
+      "C": "Foi entregue os resultados da pesquisa.",
+      "D": "Existe muitas maneiras de resolver o problema.",
+      "E": "Houveram diversas reclamações durante o atendimento."
+    },
+    "gabarito": "B",
+    "comentario": "Na alternativa B, o verbo \"chegaram\" concorda corretamente com o sujeito plural \"os documentos\". Nas demais, os verbos deveriam concordar com seus respectivos sujeitos."
+  },
+  {
+    "id": "ESP-0004",
+    "disciplina": "Português",
+    "assunto": "Crase",
+    "subassunto": "Uso da crase antes de palavra feminina",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que o uso da crase está correto.",
+    "alternativas": {
+      "A": "A reunião ocorrerá à partir das 14 horas.",
+      "B": "O servidor entregou o documento à diretora.",
+      "C": "Começou à estudar para o concurso.",
+      "D": "O candidato chegou à Brasília ontem.",
+      "E": "O relatório foi enviado à todos os setores."
+    },
+    "gabarito": "B",
+    "comentario": "O uso da crase está correto em \"à diretora\", pois ocorre a fusão da preposição \"a\" exigida pelo verbo com o artigo feminino \"a\" que acompanha \"diretora\"."
+  },
+  {
+    "id": "ESP-0005",
+    "disciplina": "Português",
+    "assunto": "Pontuação",
+    "subassunto": "Vírgula e mudança de sentido",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Considere a frase: \"Os candidatos que estudaram foram aprovados.\" A retirada das vírgulas ao redor da oração \"que estudaram\" indica que:",
+    "alternativas": {
+      "A": "Todos os candidatos estudaram e foram aprovados.",
+      "B": "Apenas os candidatos que estudaram foram aprovados.",
+      "C": "Nenhum candidato que estudou foi aprovado.",
+      "D": "Apenas um candidato estudou e foi aprovado.",
+      "E": "Os candidatos foram aprovados independentemente de terem estudado."
+    },
+    "gabarito": "B",
+    "comentario": "Sem as vírgulas, a oração \"que estudaram\" restringe o sentido de \"os candidatos\", indicando que somente o grupo de candidatos que estudou foi aprovado."
+  },
+  {
+    "id": "ESP-0006",
+    "disciplina": "Português",
+    "assunto": "Regência verbal",
+    "subassunto": "Regência do verbo \"assistir\"",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que a regência verbal está de acordo com a norma-padrão.",
+    "alternativas": {
+      "A": "O candidato assistiu o vídeo da aula antes da prova.",
+      "B": "O servidor assistiu à palestra sobre administração pública.",
+      "C": "O aluno assistiu o professor durante a explicação.",
+      "D": "O estudante assistiu a matéria antes de realizar a prova.",
+      "E": "O candidato assistiu à questão e marcou a alternativa correta."
+    },
+    "gabarito": "B",
+    "comentario": "O verbo \"assistir\", no sentido de ver ou presenciar, rege a preposição \"a\". Por isso, a construção correta é \"assistiu à palestra\"."
+  },
+  {
+    "id": "ESP-0007",
+    "disciplina": "Português",
+    "assunto": "Colocação pronominal",
+    "subassunto": "Próclise e palavras atrativas",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que a colocação do pronome está de acordo com a norma-padrão.",
+    "alternativas": {
+      "A": "Não disseram-me a verdade sobre o resultado.",
+      "B": "Se entregará o documento amanhã.",
+      "C": "Me empreste seu material de estudo.",
+      "D": "Ninguém me informou sobre a alteração do edital.",
+      "E": "Quando encontraram-se, conversaram sobre a prova."
+    },
+    "gabarito": "D",
+    "comentario": "A alternativa D está correta. A palavra \"ninguém\" é um pronome indefinido e atrai o pronome para antes do verbo, formando \"ninguém me informou\"."
+  },
+  {
+    "id": "ESP-0008",
+    "disciplina": "Português",
+    "assunto": "Regência nominal",
+    "subassunto": "Preposição exigida pelo nome",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa INCORRETA quanto à regência nominal.",
+    "alternativas": {
+      "A": "O servidor é responsável por organizar os documentos.",
+      "B": "O candidato estava apto a realizar a prova.",
+      "C": "O funcionário mostrou-se favorável à mudança.",
+      "D": "O estudante tinha necessidade de revisar o conteúdo.",
+      "E": "O candidato era consciente com a importância da preparação."
+    },
+    "gabarito": "E",
+    "comentario": "A construção \"consciente com a importância\" está inadequada na norma-padrão. Nesse contexto, a forma adequada é \"consciente da importância\", pois o adjetivo \"consciente\" rege a preposição \"de\"."
+  },
+  {
+    "id": "ESP-0009",
+    "disciplina": "Português",
+    "assunto": "Pontuação",
+    "subassunto": "Uso da vírgula",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que o uso da vírgula está de acordo com a norma-padrão.",
+    "alternativas": {
+      "A": "Os candidatos que chegaram cedo, aguardaram a abertura dos portões.",
+      "B": "Após a prova os candidatos deixaram o local.",
+      "C": "O candidato levou caneta, documento de identificação e água.",
+      "D": "Os fiscais da prova, orientaram os candidatos antes do início.",
+      "E": "Quando terminou a prova os candidatos, entregaram as folhas de resposta."
+    },
+    "gabarito": "C",
+    "comentario": "A alternativa C está correta. As vírgulas podem separar elementos de uma enumeração, como \"caneta, documento de identificação e água\". Nas demais alternativas, há uso indevido ou ausência de vírgula em estruturas que exigem pontuação."
+  },
+  {
+    "id": "ESP-0010",
+    "disciplina": "Português",
+    "assunto": "Semântica",
+    "subassunto": "Sentido contextual e sinonímia",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Considere a frase: \"O servidor foi cauteloso ao analisar os documentos antes de encaminhá-los.\" No contexto da frase, a palavra \"cauteloso\" pode ser substituída, sem alteração significativa de sentido, por:",
+    "alternativas": {
+      "A": "Impulsivo",
+      "B": "Descuidado",
+      "C": "Desatento",
+      "D": "Prudente",
+      "E": "Arbitrário"
+    },
+    "gabarito": "D",
+    "comentario": "No contexto, \"cauteloso\" significa agir com cuidado, atenção e prudência. Portanto, \"prudente\" mantém o sentido essencial da frase. As demais alternativas apresentam sentidos diferentes ou contrários ao termo original."
+  },
+  {
+    "id": "ESP-0011",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Proposições",
+    "subassunto": "Identificação de proposição",
+    "dificuldade": "Fácil",
+    "tipo": "Conceitual",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Assinale a alternativa que apresenta uma proposição lógica.",
+    "alternativas": {
+      "A": "Feche a porta, por favor.",
+      "B": "Qual é o horário da prova?",
+      "C": "Estude para a prova!",
+      "D": "O Brasil está localizado na América do Sul.",
+      "E": "Que ótima notícia!"
+    },
+    "gabarito": "D",
+    "comentario": "Uma proposição é uma frase declarativa que pode ser classificada como verdadeira ou falsa. A alternativa D apresenta uma afirmação declarativa que possui valor lógico definido. As demais são ordem, pergunta ou exclamação."
+  },
+  {
+    "id": "ESP-0012",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Negação de proposições",
+    "subassunto": "Negação de proposição simples",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Considere a proposição: \"O candidato foi aprovado no concurso.\" Qual é a sua negação lógica?",
+    "alternativas": {
+      "A": "O candidato foi reprovado no concurso.",
+      "B": "O candidato não foi aprovado no concurso.",
+      "C": "O candidato talvez tenha sido aprovado no concurso.",
+      "D": "O candidato foi aprovado ou reprovado no concurso.",
+      "E": "O candidato não realizou a prova."
+    },
+    "gabarito": "B",
+    "comentario": "A negação lógica de uma proposição simples deve afirmar que ela não é verdadeira. Portanto, a negação de \"O candidato foi aprovado\" é \"O candidato não foi aprovado\"."
+  },
+  {
+    "id": "ESP-0013",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Conectivos lógicos",
+    "subassunto": "Conjunção",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Considere as proposições: p = \"João estuda\" e q = \"João trabalha\". A proposição \"João estuda e trabalha\" será verdadeira quando:",
+    "alternativas": {
+      "A": "p for verdadeira e q for falsa.",
+      "B": "p for falsa e q for verdadeira.",
+      "C": "p e q forem falsas.",
+      "D": "p e q forem verdadeiras.",
+      "E": "p ou q for verdadeira."
+    },
+    "gabarito": "D",
+    "comentario": "Na conjunção \"p e q\", as duas proposições precisam ser verdadeiras para que o resultado seja verdadeiro. Portanto, \"João estuda e trabalha\" é verdadeira somente quando p e q são verdadeiras."
+  },
+  {
+    "id": "ESP-0014",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Conectivos lógicos",
+    "subassunto": "Disjunção",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Considere as proposições p = \"Maria estuda\" e q = \"Maria trabalha\". Na lógica proposicional, a expressão \"p ou q\" será falsa quando:",
+    "alternativas": {
+      "A": "p for verdadeira e q for verdadeira.",
+      "B": "p for verdadeira e q for falsa.",
+      "C": "p for falsa e q for verdadeira.",
+      "D": "p e q forem falsas.",
+      "E": "p ou q forem verdadeiras."
+    },
+    "gabarito": "D",
+    "comentario": "Na disjunção inclusiva \"p ou q\", basta que uma das proposições seja verdadeira para que o resultado seja verdadeiro. Portanto, ela somente será falsa quando p e q forem simultaneamente falsas."
+  },
+  {
+    "id": "ESP-0015",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Condicional",
+    "subassunto": "Condição suficiente e necessária",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Considere a proposição: \"Se o candidato estudar, então será aprovado.\" Em qual situação essa proposição é necessariamente falsa?",
+    "alternativas": {
+      "A": "O candidato estudou e foi aprovado.",
+      "B": "O candidato não estudou e foi aprovado.",
+      "C": "O candidato não estudou e não foi aprovado.",
+      "D": "O candidato estudou e não foi aprovado.",
+      "E": "O candidato foi aprovado sem estudar."
+    },
+    "gabarito": "D",
+    "comentario": "Em uma proposição condicional \"se p, então q\", a única situação que torna a proposição falsa ocorre quando p é verdadeira e q é falsa. Assim, se o candidato estudou e não foi aprovado, a condicional é falsa."
+  },
+  {
+    "id": "ESP-0016",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Equivalência lógica",
+    "subassunto": "Condicional e contrapositiva",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "A proposição \"Se o servidor está de férias, então não está trabalhando\" é logicamente equivalente a qual alternativa?",
+    "alternativas": {
+      "A": "Se o servidor não está de férias, então está trabalhando.",
+      "B": "Se o servidor está trabalhando, então não está de férias.",
+      "C": "Se o servidor não está trabalhando, então está de férias.",
+      "D": "Se o servidor não está de férias, então não está trabalhando.",
+      "E": "O servidor está de férias e está trabalhando."
+    },
+    "gabarito": "B",
+    "comentario": "A contrapositiva de uma proposição \"Se p, então q\" é \"Se não q, então não p\". Aqui, p é \"o servidor está de férias\" e q é \"não está trabalhando\". Logo, não q significa \"está trabalhando\", e não p significa \"não está de férias\"."
+  },
+  {
+    "id": "ESP-0017",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Tabela-verdade",
+    "subassunto": "Conjunção e disjunção",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Princípios de lógica proposicional",
+    "enunciado": "Considere p = \"A prova é difícil\" e q = \"O candidato estudou\". Se p é verdadeira e q é falsa, qual é o valor lógico da expressão \"p e q\"?",
+    "alternativas": {
+      "A": "Verdadeiro.",
+      "B": "Falso.",
+      "C": "Não é possível determinar.",
+      "D": "Verdadeiro e falso ao mesmo tempo.",
+      "E": "A expressão não possui valor lógico."
+    },
+    "gabarito": "B",
+    "comentario": "Na conjunção \"p e q\", ambas as proposições precisam ser verdadeiras. Como p é verdadeira e q é falsa, a expressão \"p e q\" é falsa."
+  },
+  {
+    "id": "ESP-0018",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Sequências lógicas",
+    "subassunto": "Sequência numérica",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Raciocínio lógico matemático",
+    "enunciado": "Observe a sequência: 2, 5, 8, 11, 14, ... Qual é o próximo número?",
+    "alternativas": {
+      "A": "16",
+      "B": "17",
+      "C": "18",
+      "D": "19",
+      "E": "20"
+    },
+    "gabarito": "B",
+    "comentario": "A sequência aumenta de 3 em 3. Portanto, após 14, o próximo termo é 17."
+  },
+  {
+    "id": "ESP-0019",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Problemas de raciocínio",
+    "subassunto": "Ordenação",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Raciocínio lógico matemático",
+    "enunciado": "Três candidatos — Ana, Bruno e Carlos — fizeram uma prova. Sabe-se que Ana teve uma pontuação maior que Bruno e Bruno teve uma pontuação maior que Carlos. Quem obteve a menor pontuação?",
+    "alternativas": {
+      "A": "Ana.",
+      "B": "Bruno.",
+      "C": "Carlos.",
+      "D": "Não é possível determinar.",
+      "E": "Ana e Carlos empataram."
+    },
+    "gabarito": "C",
+    "comentario": "Se Ana teve pontuação maior que Bruno e Bruno teve pontuação maior que Carlos, então a ordem é Ana > Bruno > Carlos. Portanto, Carlos obteve a menor pontuação."
+  },
+  {
+    "id": "ESP-0020",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Conjuntos",
+    "subassunto": "Operações com conjuntos",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Teoria dos conjuntos",
+    "enunciado": "Em uma turma com 40 alunos, 25 estudam Português, 18 estudam Raciocínio Lógico e 10 estudam as duas disciplinas. Quantos alunos estudam pelo menos uma das duas disciplinas?",
+    "alternativas": {
+      "A": "30",
+      "B": "31",
+      "C": "32",
+      "D": "33",
+      "E": "34"
+    },
+    "gabarito": "D",
+    "comentario": "Pelo princípio da inclusão e exclusão, somamos os alunos de cada grupo e subtraímos aqueles que foram contados duas vezes: 25 + 18 - 10 = 33. Portanto, 33 alunos estudam pelo menos uma das duas disciplinas."
+  },
+  {
+    "id": "ESP-0021",
+    "disciplina": "Matemática",
+    "assunto": "Operações básicas",
+    "subassunto": "Expressões numéricas",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Matemática básica",
+    "enunciado": "Qual é o resultado da expressão 18 + 6 ÷ 3 × 2?",
+    "alternativas": {
+      "A": "12",
+      "B": "18",
+      "C": "20",
+      "D": "22",
+      "E": "24"
+    },
+    "gabarito": "D",
+    "comentario": "Primeiro realizamos divisão e multiplicação, da esquerda para a direita: 6 ÷ 3 = 2 e 2 × 2 = 4. Depois, 18 + 4 = 22. Portanto, a alternativa correta é D."
+  },
+  {
+    "id": "ESP-0022",
+    "disciplina": "Matemática",
+    "assunto": "Porcentagem",
+    "subassunto": "Cálculo de percentual",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Matemática básica",
+    "enunciado": "Um produto custa R$ 200,00 e recebeu um desconto de 15%. Qual será o valor do desconto?",
+    "alternativas": {
+      "A": "R$ 15,00",
+      "B": "R$ 20,00",
+      "C": "R$ 25,00",
+      "D": "R$ 30,00",
+      "E": "R$ 35,00"
+    },
+    "gabarito": "D",
+    "comentario": "Para calcular 15% de R$ 200,00, fazemos 200 × 0,15 = 30. Portanto, o desconto será de R$ 30,00."
+  },
+  {
+    "id": "ESP-0023",
+    "disciplina": "Matemática",
+    "assunto": "Frações",
+    "subassunto": "Operações com frações",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Frações e operações",
+    "enunciado": "Um candidato estudou 2/5 de um determinado conteúdo pela manhã e 1/5 à tarde. Que fração do conteúdo ele estudou ao todo?",
+    "alternativas": {
+      "A": "1/5",
+      "B": "2/5",
+      "C": "3/5",
+      "D": "3/10",
+      "E": "4/5"
+    },
+    "gabarito": "C",
+    "comentario": "Como os denominadores são iguais, somamos os numeradores: 2/5 + 1/5 = 3/5. Portanto, o candidato estudou 3/5 do conteúdo."
+  },
+  {
+    "id": "ESP-0024",
+    "disciplina": "Matemática",
+    "assunto": "Regra de três",
+    "subassunto": "Grandezas diretamente proporcionais",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Regra de três simples",
+    "enunciado": "Uma impressora consegue imprimir 120 páginas em 4 minutos, mantendo velocidade constante. Quantas páginas ela imprimirá em 7 minutos?",
+    "alternativas": {
+      "A": "180",
+      "B": "200",
+      "C": "210",
+      "D": "220",
+      "E": "240"
+    },
+    "gabarito": "C",
+    "comentario": "Se a velocidade é constante, temos uma proporção direta. 120 páginas correspondem a 4 minutos; x páginas correspondem a 7 minutos. Assim, x = (120 × 7) ÷ 4 = 210. Portanto, serão impressas 210 páginas."
+  },
+  {
+    "id": "ESP-0025",
+    "disciplina": "Matemática",
+    "assunto": "Equações",
+    "subassunto": "Equação do primeiro grau",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Álgebra básica",
+    "enunciado": "Qual é o valor de x na equação 3x + 7 = 25?",
+    "alternativas": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    },
+    "gabarito": "C",
+    "comentario": "Subtraindo 7 dos dois lados, temos 3x = 18. Dividindo ambos os lados por 3, obtemos x = 6. Portanto, a alternativa correta é C."
+  },
+  {
+    "id": "ESP-0026",
+    "disciplina": "Matemática",
+    "assunto": "Média aritmética",
+    "subassunto": "Média simples",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Estatística básica",
+    "enunciado": "Um candidato obteve as seguintes notas em quatro simulados: 6, 7, 8 e 9. Qual foi sua média aritmética?",
+    "alternativas": {
+      "A": "6,5",
+      "B": "7",
+      "C": "7,5",
+      "D": "8",
+      "E": "8,5"
+    },
+    "gabarito": "C",
+    "comentario": "A média aritmética é obtida pela soma dos valores dividida pela quantidade de valores. Assim: (6 + 7 + 8 + 9) ÷ 4 = 30 ÷ 4 = 7,5."
+  },
+  {
+    "id": "ESP-0027",
+    "disciplina": "Matemática",
+    "assunto": "Juros simples",
+    "subassunto": "Cálculo de juros",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Matemática financeira",
+    "enunciado": "Um capital de R$ 1.000,00 foi aplicado a uma taxa de juros simples de 2% ao mês durante 5 meses. Qual será o valor dos juros obtidos ao final desse período?",
+    "alternativas": {
+      "A": "R$ 50,00",
+      "B": "R$ 80,00",
+      "C": "R$ 100,00",
+      "D": "R$ 120,00",
+      "E": "R$ 150,00"
+    },
+    "gabarito": "C",
+    "comentario": "Nos juros simples, usamos J = C × i × t. Assim: J = 1.000 × 0,02 × 5 = 100. Portanto, os juros obtidos serão de R$ 100,00."
+  },
+  {
+    "id": "ESP-0028",
+    "disciplina": "Matemática",
+    "assunto": "Razão e proporção",
+    "subassunto": "Razão entre quantidades",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Razão e proporção",
+    "enunciado": "Em uma turma há 12 homens e 18 mulheres. Qual é a razão entre o número de homens e o número total de alunos, na forma simplificada?",
+    "alternativas": {
+      "A": "1/2",
+      "B": "2/5",
+      "C": "3/5",
+      "D": "2/3",
+      "E": "3/2"
+    },
+    "gabarito": "B",
+    "comentario": "A turma possui 12 + 18 = 30 alunos. A razão entre homens e o total é 12/30. Simplificando por 6, obtemos 2/5. Portanto, a alternativa correta é B."
+  },
+  {
+    "id": "ESP-0029",
+    "disciplina": "Matemática",
+    "assunto": "Geometria",
+    "subassunto": "Área do retângulo",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Geometria plana",
+    "enunciado": "Um terreno retangular possui 12 metros de comprimento e 8 metros de largura. Qual é a área desse terreno?",
+    "alternativas": {
+      "A": "20 m²",
+      "B": "40 m²",
+      "C": "80 m²",
+      "D": "96 m²",
+      "E": "120 m²"
+    },
+    "gabarito": "D",
+    "comentario": "A área de um retângulo é calculada multiplicando o comprimento pela largura. Assim: 12 × 8 = 96 m². Portanto, a área do terreno é de 96 m²."
+  },
+  {
+    "id": "ESP-0030",
+    "disciplina": "Matemática",
+    "assunto": "Porcentagem",
+    "subassunto": "Aumento percentual",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Porcentagem",
+    "enunciado": "Um salário de R$ 2.000,00 recebeu um aumento de 10%. Qual passou a ser o novo salário?",
+    "alternativas": {
+      "A": "R$ 2.010,00",
+      "B": "R$ 2.100,00",
+      "C": "R$ 2.200,00",
+      "D": "R$ 2.300,00",
+      "E": "R$ 2.400,00"
+    },
+    "gabarito": "C",
+    "comentario": "O aumento corresponde a 10% de R$ 2.000,00, ou seja, R$ 200,00. Somando o aumento ao salário original: R$ 2.000,00 + R$ 200,00 = R$ 2.200,00. Portanto, o novo salário será de R$ 2.200,00."
+  },
+  {
+    "id": "ESP-0031",
+    "disciplina": "Português",
+    "assunto": "Semântica",
+    "subassunto": "Sentido de palavra no contexto",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Leia a frase: \"Diante da complexidade do problema, o servidor adotou uma postura ponderada.\" No contexto, a palavra \"ponderada\" significa:",
+    "alternativas": {
+      "A": "Impulsiva",
+      "B": "Descuidada",
+      "C": "Refletida",
+      "D": "Autoritária",
+      "E": "Indiferente"
+    },
+    "gabarito": "C",
+    "comentario": "A palavra \"ponderada\" indica uma atitude refletida, cuidadosa e baseada em consideração dos aspectos envolvidos. Portanto, \"refletida\" é a alternativa que preserva o sentido contextual."
+  },
+  {
+    "id": "ESP-0032",
+    "disciplina": "Português",
+    "assunto": "Interpretação de texto",
+    "subassunto": "Ironia",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Após chegar duas horas atrasado à reunião, um funcionário comentou: \"Realmente, sou um exemplo de pontualidade.\" Nesse contexto, a fala do funcionário produz efeito de:",
+    "alternativas": {
+      "A": "Elogio literal",
+      "B": "Contradição sem intenção",
+      "C": "Informação técnica",
+      "D": "Ironia",
+      "E": "Comparação"
+    },
+    "gabarito": "D",
+    "comentario": "A afirmação apresenta um sentido contrário ao comportamento descrito. Ao dizer que é um \"exemplo de pontualidade\" depois de chegar atrasado, o funcionário emprega ironia."
+  },
+  {
+    "id": "ESP-0033",
+    "disciplina": "Português",
+    "assunto": "Sintaxe",
+    "subassunto": "Posição de termos e sentido",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Considere as frases: I. Somente os servidores aprovados participarão do treinamento. II. Os servidores aprovados somente participarão do treinamento. Sobre o sentido das frases, é correto afirmar que:",
+    "alternativas": {
+      "A": "As duas frases possuem necessariamente o mesmo sentido.",
+      "B": "Na frase I, \"somente\" restringe os servidores que participarão do treinamento.",
+      "C": "Na frase II, \"somente\" indica que os servidores não foram aprovados.",
+      "D": "A frase I está gramaticalmente incorreta.",
+      "E": "A frase II não possui sentido completo."
+    },
+    "gabarito": "B",
+    "comentario": "Na frase I, \"somente\" está associado a \"os servidores aprovados\", restringindo o grupo que participará do treinamento. A posição de um termo pode influenciar o sentido da construção."
+  },
+  {
+    "id": "ESP-0034",
+    "disciplina": "Matemática",
+    "assunto": "Conjuntos",
+    "subassunto": "União e interseção",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Teoria dos conjuntos",
+    "enunciado": "Em uma turma de 50 alunos, 28 estudam Inglês, 22 estudam Espanhol e 8 estudam as duas disciplinas. Quantos alunos estudam pelo menos uma dessas duas línguas?",
+    "alternativas": {
+      "A": "38",
+      "B": "40",
+      "C": "42",
+      "D": "44",
+      "E": "46"
+    },
+    "gabarito": "C",
+    "comentario": "Pelo princípio da inclusão e exclusão: 28 + 22 - 8 = 42. Os 8 alunos que estudam as duas disciplinas foram contados duas vezes e, por isso, devem ser subtraídos uma vez."
+  },
+  {
+    "id": "ESP-0035",
+    "disciplina": "Matemática",
+    "assunto": "Grandezas e medidas",
+    "subassunto": "Conversão de unidades",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Grandezas e medidas",
+    "enunciado": "Um arquivo possui tamanho de 2,5 gigabytes. Considerando 1 gigabyte = 1.024 megabytes, qual é o tamanho aproximado desse arquivo em megabytes?",
+    "alternativas": {
+      "A": "2.048 MB",
+      "B": "2.400 MB",
+      "C": "2.560 MB",
+      "D": "2.600 MB",
+      "E": "3.024 MB"
+    },
+    "gabarito": "C",
+    "comentario": "Para converter gigabytes em megabytes, multiplicamos por 1.024. Assim, 2,5 × 1.024 = 2.560 MB. Portanto, o arquivo possui aproximadamente 2.560 megabytes."
+  },
+  {
+    "id": "ESP-0036",
+    "disciplina": "Matemática",
+    "assunto": "Probabilidade",
+    "subassunto": "Probabilidade de evento simples",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Probabilidade",
+    "enunciado": "Uma caixa contém 5 cartões numerados de 1 a 5. Um cartão é retirado ao acaso. Qual é a probabilidade de o número sorteado ser par?",
+    "alternativas": {
+      "A": "1/5",
+      "B": "2/5",
+      "C": "1/2",
+      "D": "3/5",
+      "E": "4/5"
+    },
+    "gabarito": "B",
+    "comentario": "Os números pares entre 1 e 5 são 2 e 4, totalizando 2 resultados favoráveis em 5 possibilidades. Portanto, a probabilidade é 2/5."
+  },
+  {
+    "id": "ESP-0037",
+    "disciplina": "Matemática",
+    "assunto": "Geometria",
+    "subassunto": "Perímetro de retângulo",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Geometria plana",
+    "enunciado": "Um documento possui formato retangular, com 30 cm de comprimento e 20 cm de largura. Qual é o perímetro desse retângulo?",
+    "alternativas": {
+      "A": "50 cm",
+      "B": "80 cm",
+      "C": "90 cm",
+      "D": "100 cm",
+      "E": "120 cm"
+    },
+    "gabarito": "D",
+    "comentario": "O perímetro de um retângulo é calculado por 2 × (comprimento + largura). Assim: 2 × (30 + 20) = 2 × 50 = 100 cm."
+  },
+  {
+    "id": "ESP-0038",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Proposições",
+    "subassunto": "Condicional",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Lógica proposicional",
+    "enunciado": "Considere a proposição: \"Se o relatório estiver completo, então será encaminhado ao setor responsável.\" Em qual situação essa proposição é falsa?",
+    "alternativas": {
+      "A": "O relatório está completo e é encaminhado ao setor responsável.",
+      "B": "O relatório não está completo e é encaminhado ao setor responsável.",
+      "C": "O relatório não está completo e não é encaminhado ao setor responsável.",
+      "D": "O relatório está completo e não é encaminhado ao setor responsável.",
+      "E": "O relatório é encaminhado ao setor responsável após uma conferência."
+    },
+    "gabarito": "D",
+    "comentario": "Em uma condicional \"Se p, então q\", a única situação em que a proposição é falsa ocorre quando p é verdadeira e q é falsa. Portanto, o relatório estar completo e não ser encaminhado torna a proposição falsa."
+  },
+  {
+    "id": "ESP-0039",
+    "disciplina": "Informática",
+    "assunto": "Segurança da informação",
+    "subassunto": "Phishing",
+    "dificuldade": "Fácil",
+    "tipo": "Conceitual",
+    "fonte": "Segurança da informação",
+    "enunciado": "Um servidor recebe um e-mail aparentemente enviado pelo banco, solicitando que clique em um link e informe sua senha para evitar o bloqueio da conta. Essa situação é um exemplo típico de:",
+    "alternativas": {
+      "A": "Backup",
+      "B": "Phishing",
+      "C": "Firewall",
+      "D": "Compactação",
+      "E": "Criptografia"
+    },
+    "gabarito": "B",
+    "comentario": "Phishing é uma técnica de fraude que procura induzir o usuário a fornecer informações, como senhas e dados pessoais, geralmente por meio de mensagens que simulam fontes legítimas."
+  },
+  {
+    "id": "ESP-0040",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Princípios da Administração Pública",
+    "subassunto": "Princípio da publicidade",
+    "dificuldade": "Média",
+    "tipo": "Conceitual",
+    "fonte": "Direito Administrativo",
+    "enunciado": "Um órgão público disponibiliza informações sobre seus atos administrativos para permitir que a sociedade acompanhe e fiscalize sua atuação. Essa conduta está diretamente relacionada ao princípio da:",
+    "alternativas": {
+      "A": "Legalidade",
+      "B": "Moralidade",
+      "C": "Eficiência",
+      "D": "Impessoalidade",
+      "E": "Publicidade"
+    },
+    "gabarito": "E",
+    "comentario": "O princípio da publicidade está relacionado à transparência dos atos da Administração Pública, permitindo seu conhecimento e controle social, ressalvadas as hipóteses legais de sigilo."
+  },
+  {
+    "id": "ESP-0041",
+    "disciplina": "Português",
+    "assunto": "Interpretação de texto",
+    "subassunto": "Inferência textual",
+    "dificuldade": "Média",
+    "tipo": "Interpretação",
+    "fonte": "Língua Portuguesa — interpretação textual",
+    "enunciado": "Embora o setor tenha digitalizado parte de seus documentos, os funcionários mantiveram a classificação por assunto e data para facilitar a localização dos arquivos. Com base no texto, é correto inferir que:",
+    "alternativas": {
+      "A": "A digitalização tornou desnecessária a organização dos documentos.",
+      "B": "A classificação dos arquivos impede sua digitalização.",
+      "C": "A organização continua sendo importante mesmo com a digitalização.",
+      "D": "Os documentos digitais não podem ser classificados por data.",
+      "E": "A digitalização eliminou todos os arquivos físicos."
+    },
+    "gabarito": "C",
+    "comentario": "O texto informa que a classificação foi mantida para facilitar a localização dos arquivos. Portanto, a digitalização não eliminou a necessidade de organização."
+  },
+  {
+    "id": "ESP-0042",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e garantias fundamentais",
+    "subassunto": "Princípio da legalidade",
+    "dificuldade": "Fácil",
+    "tipo": "Conceitual",
+    "fonte": "Constituição Federal — art. 5º, II",
+    "enunciado": "De acordo com a Constituição Federal, ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de:",
+    "alternativas": {
+      "A": "Decisão de qualquer servidor público.",
+      "B": "Costume administrativo, ainda que contrário à lei.",
+      "C": "Determinação verbal de qualquer autoridade.",
+      "D": "Lei.",
+      "E": "Decisão de entidade privada."
+    },
+    "gabarito": "D",
+    "comentario": "O art. 5º, II, da Constituição Federal estabelece que ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei."
+  },
+  {
+    "id": "ESP-0043",
+    "disciplina": "Informática",
+    "assunto": "Segurança da informação",
+    "subassunto": "Phishing",
+    "dificuldade": "Fácil",
+    "tipo": "Aplicação",
+    "fonte": "Segurança da informação",
+    "enunciado": "Um funcionário recebe uma mensagem que imita a comunicação oficial de um banco e solicita sua senha por meio de um link. A técnica utilizada nessa tentativa de fraude é denominada:",
+    "alternativas": {
+      "A": "Desfragmentação.",
+      "B": "Phishing.",
+      "C": "Backup incremental.",
+      "D": "Compactação de arquivos.",
+      "E": "Atualização de sistema."
+    },
+    "gabarito": "B",
+    "comentario": "Phishing é uma técnica fraudulenta que tenta induzir a vítima a revelar informações sensíveis, como senhas e dados bancários, por meio de mensagens ou páginas falsas."
+  },
+  {
+    "id": "ESP-0044",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Negação de proposições",
+    "subassunto": "Quantificadores",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Lógica proposicional",
+    "enunciado": "Considere a afirmação: \"Todos os relatórios foram revisados.\" Qual alternativa apresenta sua negação lógica?",
+    "alternativas": {
+      "A": "Nenhum relatório foi revisado.",
+      "B": "Todos os relatórios deixaram de ser revisados.",
+      "C": "A maioria dos relatórios não foi revisada.",
+      "D": "Alguns relatórios foram revisados.",
+      "E": "Pelo menos um relatório não foi revisado."
+    },
+    "gabarito": "E",
+    "comentario": "A negação de uma afirmação universal (\"todos\") é uma afirmação existencial: basta que exista pelo menos um relatório que não tenha sido revisado para tornar falsa a afirmação original."
+  },
+  {
+    "id": "ESP-0045",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Princípios da Administração Pública",
+    "subassunto": "Impessoalidade",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Direito Administrativo — art. 37 da Constituição Federal",
+    "enunciado": "Um gestor determina que a divulgação de uma obra pública destaque seu nome e sua imagem pessoal, como se ele fosse o responsável exclusivo pela realização. Essa conduta contraria especialmente o princípio da:",
+    "alternativas": {
+      "A": "Impessoalidade.",
+      "B": "Razoabilidade.",
+      "C": "Continuidade do serviço público.",
+      "D": "Autotutela.",
+      "E": "Hierarquia."
+    },
+    "gabarito": "A",
+    "comentario": "O princípio da impessoalidade impede que a atuação administrativa seja utilizada para promoção pessoal de agentes públicos. A publicidade institucional deve ter caráter educativo, informativo ou de orientação social, sem promoção pessoal."
+  },
+  {
+    "id": "ESP-0046",
+    "disciplina": "Matemática",
+    "assunto": "Porcentagem",
+    "subassunto": "Desconto percentual",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Matemática básica",
+    "enunciado": "Um material de estudo custa R$ 150,00. Durante uma promoção, seu preço recebe um desconto de 20%. Qual será o preço após o desconto?",
+    "alternativas": {
+      "A": "R$ 110,00",
+      "B": "R$ 115,00",
+      "C": "R$ 120,00",
+      "D": "R$ 125,00",
+      "E": "R$ 130,00"
+    },
+    "gabarito": "C",
+    "comentario": "Calculamos 20% de R$ 150,00: 150 × 0,20 = R$ 30,00. Subtraindo o desconto do preço original, temos R$ 150,00 − R$ 30,00 = R$ 120,00."
+  },
+  {
+    "id": "ESP-0047",
+    "disciplina": "Português",
+    "assunto": "Concordância verbal",
+    "subassunto": "Verbo haver impessoal",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Gramática da Língua Portuguesa",
+    "enunciado": "Assinale a alternativa em que a concordância verbal está de acordo com a norma-padrão.",
+    "alternativas": {
+      "A": "Fazem dois anos que o edital foi publicado.",
+      "B": "Haviam muitos candidatos aguardando o resultado.",
+      "C": "Existe várias vagas disponíveis no órgão.",
+      "D": "Havia muitos candidatos aguardando o resultado.",
+      "E": "Devem haver novas convocações amanhã."
+    },
+    "gabarito": "D",
+    "comentario": "O verbo \"haver\", com sentido de existir, é impessoal e deve permanecer na terceira pessoa do singular. Por isso, a forma correta é \"Havia muitos candidatos\"."
+  },
+  {
+    "id": "ESP-0048",
+    "disciplina": "Informática",
+    "assunto": "Internet e redes",
+    "subassunto": "Funcionamento do DNS",
+    "dificuldade": "Média",
+    "tipo": "Conceitual",
+    "fonte": "Redes de computadores",
+    "enunciado": "Qual é a principal função do Sistema de Nomes de Domínio (DNS) na internet?",
+    "alternativas": {
+      "A": "Criptografar automaticamente todos os arquivos do computador.",
+      "B": "Eliminar a necessidade de conexão com a internet.",
+      "C": "Armazenar cópias de segurança de todos os sites.",
+      "D": "Converter qualquer arquivo em formato PDF.",
+      "E": "Associar nomes de domínio a endereços IP, permitindo localizar serviços na rede."
+    },
+    "gabarito": "E",
+    "comentario": "O DNS permite resolver nomes de domínio, como os utilizados em endereços de sites, para os endereços IP correspondentes, facilitando a localização dos serviços na rede."
+  },
+  {
+    "id": "ESP-0049",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Administração Pública",
+    "subassunto": "Concurso público",
+    "dificuldade": "Média",
+    "tipo": "Conceitual",
+    "fonte": "Constituição Federal — art. 37, II",
+    "enunciado": "Segundo a regra geral prevista na Constituição Federal, a investidura em cargo ou emprego público depende de aprovação prévia em concurso público, ressalvadas as nomeações para:",
+    "alternativas": {
+      "A": "Cargos efetivos ocupados por servidores estáveis.",
+      "B": "Cargos em comissão declarados em lei de livre nomeação e exoneração.",
+      "C": "Qualquer função administrativa temporária, independentemente da lei.",
+      "D": "Cargos públicos ocupados exclusivamente por brasileiros natos.",
+      "E": "Todos os cargos de direção de órgãos públicos, sem exceção."
+    },
+    "gabarito": "B",
+    "comentario": "O art. 37, II, da Constituição Federal prevê o concurso público como regra para a investidura em cargo ou emprego público, ressalvadas as nomeações para cargos em comissão declarados em lei de livre nomeação e exoneração."
+  },
+  {
+    "id": "ESP-0050",
+    "disciplina": "Raciocínio Lógico",
+    "assunto": "Equivalência lógica",
+    "subassunto": "Condicional e disjunção",
+    "dificuldade": "Média",
+    "tipo": "Aplicação",
+    "fonte": "Lógica proposicional",
+    "enunciado": "Considere a proposição \"Se o sistema está atualizado, então funciona corretamente\". Sendo p = \"o sistema está atualizado\" e q = \"o sistema funciona corretamente\", qual expressão é logicamente equivalente à condicional p → q?",
+    "alternativas": {
+      "A": "p e q.",
+      "B": "p e não q.",
+      "C": "p ou q.",
+      "D": "não p e q.",
+      "E": "não p ou q."
+    },
+    "gabarito": "E",
+    "comentario": "Uma condicional p → q é logicamente equivalente a ¬p ∨ q. Assim, \"Se p, então q\" equivale a \"não p ou q\"."
+  }
+];

@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE and Editor configs
+.vscode/
+.idea/
+
+# Planilhas e arquivos mestres locais (sigilosos)
+banco_questoes.xlsx
+banco_questoes.csv
+*.xlsx
+*.csv
+~$*

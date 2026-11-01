@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz ESP — Banco de Questões</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon">🎯</div>
+        <div>
+          <h1>Quiz ESP</h1>
+          <p class="subtitle">Banco de Questões Interativo</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="icon-btn" title="Alternar Modo Escuro/Claro">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button id="resetSessionBtn" class="secondary-btn" title="Reiniciar Sessão">
+          🔄 Reiniciar
+        </button>
+      </div>
+    </header>
+
+    <!-- Controls / Filters Bar -->
+    <section class="filters-card">
+      <div class="filter-group">
+        <label for="filterDisciplina">Disciplina:</label>
+        <select id="filterDisciplina">
+          <option value="ALL">Todas as Disciplinas</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterDificuldade">Dificuldade:</label>
+        <select id="filterDificuldade">
+          <option value="ALL">Todas as Dificuldades</option>
+        </select>
+      </div>
+      <div class="stats-badge" id="poolCountBadge">
+        0 disponíveis
+      </div>
+    </section>
+
+    <!-- Score & Stats Bar -->
+    <section class="stats-card">
+      <div class="stat-item">
+        <span class="stat-label">Progresso</span>
+        <span class="stat-value" id="progressText">0 / 0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Acertos</span>
+        <span class="stat-value text-success" id="correctScore">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Aproveitamento</span>
+        <span class="stat-value" id="accuracyRate">0%</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Sequência</span>
+        <span class="stat-value text-accent" id="streakCount">🔥 0</span>
+      </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progressBarFill" style="width: 0%"></div>
+    </div>
+
+    <!-- Main Question Box -->
+    <main class="question-container" id="questionContainer">
+      <!-- Question Meta Badges -->
+      <div class="question-meta" id="questionMeta">
+        <span class="meta-tag id-tag" id="tagId">ESP-0000</span>
+        <span class="meta-tag discipline-tag" id="tagDisciplina">Disciplina</span>
+        <span class="meta-tag subject-tag" id="tagAssunto">Assunto</span>
+        <span class="meta-tag diff-tag" id="tagDificuldade">Dificuldade</span>
+        <span class="meta-tag source-tag" id="tagFonte">Fonte</span>
+      </div>
+
+      <!-- Enunciado -->
+      <div class="enunciado-box">
+        <p id="enunciadoText" class="enunciado-text">Carregando questão...</p>
+      </div>
+
+      <!-- Alternatives Grid / List -->
+      <div class="alternatives-list" id="alternativesList">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Feedback & Resolution Card -->
+      <div class="feedback-card hidden" id="feedbackCard">
+        <div class="feedback-header" id="feedbackHeader">
+          <div class="feedback-icon" id="feedbackIcon">✅</div>
+          <div class="feedback-title" id="feedbackTitle">Você acertou!</div>
+        </div>
+        <div class="feedback-body">
+          <div class="gabarito-pill" id="gabaritoPill">Gabarito: <strong>A</strong></div>
+          <p class="comentario-text" id="comentarioText">Comentário explicativo.</p>
+        </div>
+        <div class="feedback-actions">
+          <button id="nextQuestionBtn" class="primary-btn next-btn">
+            Próxima Questão ➔ <span class="shortcut-hint">[Enter]</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Finished Screen (Hidden initially) -->
+    <div class="finished-container hidden" id="finishedContainer">
+      <div class="finished-card">
+        <div class="trophy-icon">🏆</div>
+        <h2>Parabéns! Rodada Concluída!</h2>
+        <p class="finished-desc">Você respondeu todas as questões do filtro selecionado.</p>
+        
+        <div class="final-score-grid">
+          <div class="final-stat">
+            <span class="final-stat-val" id="finalTotal">0</span>
+            <span class="final-stat-lbl">Questões</span>
+          </div>
+          <div class="final-stat">
+            <span class="final-stat-val text-success" id="finalCorrect">0</span>
+            <span class="final-stat-lbl">Acertos</span>
+          </div>
+          <div class="final-stat">
+            <span class="final-stat-val" id="finalAccuracy">0%</span>
+            <span class="final-stat-lbl">Aproveitamento</span>
+          </div>
+          <div class="final-stat">
+            <span class="final-stat-val text-accent" id="finalMaxStreak">0</span>
+            <span class="final-stat-lbl">Maior Sequência</span>
+          </div>
+        </div>
+
+        <button id="restartBtn" class="primary-btn">
+          Jogar Novamente 🔄
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer info -->
+    <footer class="app-footer">
+      <span>Banco: <strong>Banco_de_Questoes_ESP_1</strong> (Google Drive)</span>
+      <span class="shortcuts-legend">Atalhos: Teclas <strong>A</strong>-<strong>E</strong> (ou <strong>1</strong>-<strong>5</strong>) para responder • <strong>Enter</strong> para avançar</span>
+    </footer>
+  </div>
+
+  <!-- Load Database (supports file:// offline opening) -->
+  <script src="questoes_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
